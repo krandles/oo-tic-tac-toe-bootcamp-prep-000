@@ -20,4 +20,17 @@ class TicTacToe
     index = input.to_i - 1
   end
 
+  def move(index, character)
+    @board[index] = character
+  end
+
+  def position_taken?(index)
+    if @board[index] == "X" || @board[index] == "O"
+      true
+    else
+      false
+    end
+  end
+
+
 end
