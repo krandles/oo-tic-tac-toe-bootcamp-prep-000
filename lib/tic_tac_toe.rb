@@ -5,7 +5,7 @@ class TicTacToe
     @board = Array.new(9, " ")
   end
 
-  def display_board(board)
+  def display_board
     result = ""
     divider = "-----------\n"
     result << " #{@board[0]} | #{@board[1]} | #{@board[2]} \n"
